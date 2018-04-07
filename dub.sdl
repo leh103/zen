@@ -1,0 +1,5 @@
+name "zen"
+description "\"An editor for the D language\""
+authors "larry hemsley"
+copyright "Copyright © 2018, larry hemsley"
+license "gnu_gpl_3.0"

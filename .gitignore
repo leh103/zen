@@ -1,0 +1,14 @@
+.dub
+docs.json
+__dummy.html
+docs/
+zen.so
+zen.dylib
+zen.dll
+zen.a
+zen.lib
+zen-test-*
+*.exe
+*.o
+*.obj
+*.lst
