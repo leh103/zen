@@ -1,22 +1,24 @@
 /*
- * zen.d
+ * app.d
  *
- * This file is a part of the ZenEditor package
+ * This file is a part of the ZenEditor package.
+ * Zen is an editor for the D language.
  *
- * Copyright 2018 Lawrence Hemsley <lawrence.hemsley@gmail.com>
+ * Copyright (c) 2018 Lawrence Hemsley <lawrence.hemsley@gmail.com>
  * All Rights Reserved
  *
- * This program is released under the Boost Software License - Version 1.0 - August 17th, 2003:
- * To view the license go to http://http://www.boost.org/LICENSE_1_0.txt.
- * Or see the file LICENSE included in this distribution.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
- * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
- * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>..
  *
  * ZenEditor is based in part on works of the GtkD project (http://gtkd.org).
  *
@@ -26,24 +28,20 @@ module zen;
 
 //debug = 1;
 
-private import ZenMenuBar;
-private import ZenToolbar;
-//private import ZenNotebook;
-
 private import stdlib = core.stdc.stdlib : exit;
 private import std.stdio;
 
+private import gtk.AboutDialog;
+private import gtk.Box;
+private import gtk.Dialog;
 private import gtk.Main;
 private import gtk.MainWindow;
-private import gtk.Window;
-private import gtk.Version;
-private import gtk.Widget;
 private import gtk.MessageDialog;
-private import gtk.AboutDialog;
-private import gtk.Dialog;
-private import gtk.Box;
 private import gtk.Paned;
 private import gtk.StatusBar;
+private import gtk.Version;
+private import gtk.Widget;
+private import gtk.Window;
 
 private import gtkc.gtktypes;
 

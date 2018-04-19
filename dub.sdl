@@ -1,5 +1,6 @@
 name "zen"
-description "\"An editor for the D language\""
+description "An editor for the D language"
 authors "larry hemsley"
-copyright "Copyright © 2018, larry hemsley"
+copyright "Copyright © 2018, Lawrence Hemsley"
 license "gnu_gpl_3.0"
+dependency "gtk-d" version="~>3.2.3"

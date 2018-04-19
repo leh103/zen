@@ -2,11 +2,14 @@
 docs.json
 __dummy.html
 docs/
+zen
 zen.so
 zen.dylib
 zen.dll
 zen.a
 zen.lib
+zen.dlangide*
+zen.settings
 zen-test-*
 *.exe
 *.o
